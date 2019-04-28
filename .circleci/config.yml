@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/src
+    docker:
+      - image: docker:18.09-git
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: build images
+          command: /bin/sh build.sh
+          no_output_timeout: 2400
