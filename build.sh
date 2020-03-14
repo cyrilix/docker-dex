@@ -1,8 +1,8 @@
 #! /bin/bash
 
 IMG_NAME=cyrilix/dex
-VERSION=2.21.0
-MAJOR_VERSION=2.21
+VERSION=v2.21.0
+MAJOR_VERSION=v2.21
 export DOCKER_CLI_EXPERIMENTAL=enabled
 export DOCKER_USERNAME=cyrilix
 
@@ -33,7 +33,7 @@ fetch_sources() {
     fi
     cd ${project_name}
     git reset --hard
-    git checkout v${VERSION}
+    git checkout ${VERSION}
 }
 
 build_and_push_images() {
