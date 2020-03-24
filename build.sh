@@ -1,8 +1,8 @@
 #! /bin/bash
 
 IMG_NAME=cyrilix/dex
-VERSION=v2.21.0
-MAJOR_VERSION=v2.21
+VERSION=v2.23.0
+MAJOR_VERSION=v2.23
 export DOCKER_CLI_EXPERIMENTAL=enabled
 export DOCKER_USERNAME=cyrilix
 
